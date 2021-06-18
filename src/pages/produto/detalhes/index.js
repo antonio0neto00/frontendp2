@@ -16,16 +16,15 @@ export default class Produto extends Component {
             )
             .catch(erro => this.setState({ erro }));
     }
- 
     render() {
-        const { produto, index } = this.state;
+        const { produto } = this.state;
  
         if (produto.ativo) {
             produto.ativo = "Produto Ativo";
         } else {
             produto.ativo = "Produto Inativo";
         }
- 
+
         return (
             <div className="produto-info">
                 <h1> {produto.Nome} </h1>

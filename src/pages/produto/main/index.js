@@ -30,7 +30,7 @@ export default class Main extends Component {
  
                     <article key={produto._id}>
                         <strong> {produto.Preço} </strong>
-                        <p> <Link to={`/produtos/${produto.id}`}> Acessar </Link> </p>
+                        <p> <Link to={`/produto/${produto.id}`}> Acessar </Link> </p>
                         <br />
                     </article>
                 </div>
