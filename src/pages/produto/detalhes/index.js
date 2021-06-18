@@ -10,7 +10,7 @@ export default class Produto extends Component {
     componentDidMount() {
         const { id } = this.props.match.params;
  
-        fetch(`https://produto-prova1.herokuapp.com/produto${id}`)
+        fetch(`https://produto-prova1.herokuapp.com/produto/${id}`)
             .then(produto =>
                 produto.json().then(produto => this.setState({ produto }))
             )
