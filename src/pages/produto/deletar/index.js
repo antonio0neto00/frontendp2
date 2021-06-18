@@ -29,7 +29,7 @@ class DeletarProduto extends Component {
     componentDidMount() {
         const { id } = this.props.match.params;
  
-        fetch(`http://localhost:3005/produto/${id}`)
+        fetch(`https://github.com/antonio0neto00/Backend-ProdutoProva1/${id}`)
             .then(data => {
                 data.json().then(data => {
                     if (data.error) {
