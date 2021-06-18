@@ -71,7 +71,7 @@ class DeletarProduto extends Component {
     handleClick = event => {
         const { id } = this.props.match.params;
  
-        fetch(`http://localhost:3005/produto/${id}`, {
+        fetch(`${process.env.REACT_APP_API_URL}/${id}`, {
             method: "delete"
         })
             .then(data => {
