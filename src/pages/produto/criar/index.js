@@ -33,7 +33,7 @@ class CriarProduto extends Component {
     render() {
         const { redirect } = this.state;
         if (redirect) {
-            return <Redirect to="/produtos" />;
+            return <Redirect to="/produto" />;
         } else {
             return (
                 <form onSubmit={this.handleSubmit}>
@@ -117,7 +117,7 @@ class CriarProduto extends Component {
     };
  
     handleSubmit = event => {
-        fetch("http://localhost:3005/produtos", {
+        fetch("http://localhost:3005/produto", {
             method: "post",
             body: JSON.stringify(this.state.produto),
             headers: {
